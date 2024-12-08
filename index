@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map with Pins</title>
+  <link rel="stylesheet" href="map.css">
+</head>
+<body>
+  <header>
+    Map of Europe in the Renaissance
+  </header>
+
+  <div class="container">
+    <div class="map">
+      <img src="europe map.jpg" alt="Map" class="map-image">
+      
+      <div class="pin" style="top: %; left: 20%;" 
+           data-painting-name="The Garden of Earthly Delights" 
+           data-painting-img="bosch.jpg" 
+           data-time-period="Late Gothic to Early Renaissance (1490–1510)" 
+           data-description="A fantastical triptych exploring morality, temptation, and divine judgment. The left panel shows Eden, the central panel depicts earthly indulgence, and the right panel represents Hell." 
+           data-artist-name="Hieronymus Bosch" 
+           data-artist-background="A Dutch painter known for his surreal and imaginative works, Bosch used detailed imagery to convey religious and moral messages." 
+           data-artist-img="bosch-portrait.jpg"></div>
+      
+      <div class="pin" style="top: 80%; left: 10%;" 
+           data-painting-name="Saint Vincent Panels" 
+           data-painting-img="goncalves.jpg" 
+           data-time-period="Late Gothic (c. 1470)" 
+           data-description="The panels symbolize Portugal’s unity, featuring diverse figures in devotion to St. Vincent." 
+           data-artist-name="Nuno Gonçalves" 
+           data-artist-background="The royal court painter of King Afonso V of Portugal, Gonçalves is considered one of Portugal's greatest painters, though little is known about his life." 
+           data-artist-img="goncalves-portrait.jpg"></div>
+      
+      <div class="pin" style="top: 65%; left: 55%;" 
+           data-painting-name="The (Great) Tower of Babel" 
+           data-painting-img="bruegel.jpg" 
+           data-time-period="Northern Renaissance (1563)" 
+           data-description="Depicts the biblical Tower of Babel, symbolizing human ambition and its consequences." 
+           data-artist-name="Pieter Bruegel the Elder" 
+           data-artist-background="Bruegel was a Flemish painter who focused on scenes of everyday life, moral lessons, and the folly of human nature." 
+           data-artist-img="bruegel-portrait.jpg"></div>
+      
+      
+      <div class="pin" style="top: 60%; left: 55%;" 
+           data-painting-name="The Madonna of the Roudnice" 
+           data-painting-img="madonna-roudnice.jpg" 
+           data-time-period="Renaissance (c. 1500)" 
+           data-description="A panel painting depicting the Madonna and Child, with saints and angels surrounding them." 
+           data-artist-name="Master of the Madonna of the Roudnice" 
+           data-artist-background="The artist is anonymous, known for his works in Central European Renaissance art, specifically in Bohemia." 
+           data-artist-img="No confirmed image exists"></div>
+          
+      <div class="pin" style="top: 53%; left: 65%;" 
+           data-painting-name="Lady with an Ermine" 
+           data-painting-img="lady-ermine.jpg" 
+           data-time-period="Renaissance (1489)" 
+           data-description="A portrait of Cecilia Gallerani, a mistress of Ludovico Sforza, Duke of Milan." 
+           data-artist-name="Leonardo da Vinci" 
+           data-artist-background="An Italian polymath, Leonardo was one of the greatest artists of the Renaissance, known for works like the Mona Lisa and The Last Supper." 
+           data-artist-img="da-vinci-portrait.jpg"></div>
+      
+      <div class="pin" style="top: 63%; left: 65%;" 
+           data-painting-name="The Altarpiece of Saint Jacob" 
+           data-painting-img="altarpiece saint jacob.jpg" 
+           data-time-period="Gothic (c. 1390)" 
+           data-description="A polyptych altarpiece with scenes from the life of Saint James." 
+           data-artist-name="Master of the Altarpiece of Saint James" 
+           data-artist-background="A master woodcarver of the Slovak Late Gothic, his work is celebrated for its intricate detail and grandeur." 
+           data-artist-img="No confirmed image exists"></div>
+
+    
+      <div class="pin" style="top: 37%; left: 85%;" 
+           data-painting-name="The Trinity" 
+           data-painting-img="trinity.jpg" 
+           data-time-period="Early Renaissance (1425)" 
+           data-description="A depiction of the Holy Trinity in a highly symbolic composition, showing God the Father, Son, and the Holy Spirit." 
+           data-artist-name="Andrei Rublev" 
+           data-artist-background="Rublev was a Russian icon painter, known for his religious and serene depictions of Christian subjects." 
+           data-artist-img="rublev-portrait.jpg"></div>
+      
+      <div class="pin" style="top: 76%; left: 50%;" 
+           data-painting-name="Ognissanti Madonna" 
+           data-painting-img="ognissanti-madonna.jpg" 
+           data-time-period="Renaissance (c. 1310)" 
+           data-description="An altarpiece showing the Madonna and Child with saints in a Gothic style." 
+           data-artist-name="Giotto di Bondone" 
+           data-artist-background="Giotto was an Italian painter and architect, a precursor to the Renaissance, and a key figure in developing more naturalistic approaches to art." 
+           data-artist-img="giotto-portrait.jpg"></div>
+      
+      <div class="pin" style="top: 97%; left: 79%;" 
+           data-painting-name="Dormition of the Virgin" 
+           data-painting-img="dormition-virgin.jpg" 
+           data-time-period="Late Byzantine (c. 1460)" 
+           data-description="A depiction of the Virgin Mary’s death and ascent to Heaven, popular in Eastern Orthodox iconography." 
+           data-artist-name="El Greco" 
+           data-artist-background="El Greco was a painter, sculptor, and architect of the Spanish Renaissance, known for his unique style blending Renaissance and Byzantine influences." 
+           data-artist-img="el-greco-portrait.jpg"></div>
+      
+      <div class="pin" style="top: 30%; left: 50%;" 
+           data-painting-name="Altarpiece of the Apostles" 
+           data-painting-img="apostles-altarpiece.jpg" 
+           data-time-period="Gothic (c. 1480)" 
+           data-description="An altarpiece depicting Christ and the twelve apostles in a Gothic style." 
+           data-artist-name="Bernt Notke" 
+           data-artist-background="A prolific artist of the Baltic region, Notke specialized in monumental wooden sculptures and altarpieces." 
+           data-artist-img="No confirmed image exists"></div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="toggleSidebar()">Close</div>
+      <div class="info" id="info">
+
+    </div>
+    </div>
+  </div>
+
+  <script>
+    const pins = document.querySelectorAll('.pin');
+    const sidebar = document.getElementById('sidebar');
+    const info = document.getElementById('info');
+  
+    pins.forEach(pin => {
+      pin.addEventListener('click', () => {
+        const paintingName = pin.getAttribute('data-painting-name');
+        const paintingImg = pin.getAttribute('data-painting-img');
+        const timePeriod = pin.getAttribute('data-time-period');
+        const description = pin.getAttribute('data-description');
+        const artistName = pin.getAttribute('data-artist-name');
+        const artistBackground = pin.getAttribute('data-artist-background');
+        const artistImg = pin.getAttribute('data-artist-img');
+
+        info.innerHTML = `
+          <h2>${paintingName}</h2>
+          <img src="${paintingImg}" alt="${paintingName}" class="painting-img" />
+          <p><strong>Time Period:</strong> ${timePeriod}</p>
+          <p><strong>Description:</strong> ${description}</p>
+          <h3>Artist: ${artistName}</h3>
+          <img src="${artistImg}" alt="${artistName}" class="artist-img" />
+          <p><strong>Artist Background:</strong> ${artistBackground}</p>
+        `;
+        
+        toggleSidebar();
+      });
+    });
+  
+    function toggleSidebar() {
+      sidebar.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
